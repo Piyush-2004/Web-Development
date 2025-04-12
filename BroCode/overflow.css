@@ -1,0 +1,17 @@
+#of{
+    border: 2px solid;
+    height: 75px;
+    overflow: auto;
+}
+div{
+    background-color: rgb(255, 120, 120);
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+span{
+    background-color: rgb(112, 202, 241);
+    width: 100px;
+    height: 100px;
+    display: inline;
+}

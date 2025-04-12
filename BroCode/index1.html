@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Group Togethet HTML -->
+    <!-- <span> inline container to group elements for styling purposes -->
+    <!-- <div> lock container to group elements for styling purposes -->
+
+    <h1><span style="background-color: tomato;">This is a span title</span></h1>
+    <h1>
+        <div style="background-color: aqua;">This is a div title</div>
+    </h1>
+
+    <p><span style="background-color: tomato;">This ia a span sentence.</span></p>
+    <p>
+    <div style="background-color: aqua;">This ia a span sentence.</div>
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="background-color: tomato;">Accusantium
+            corporis id magni cupiditate reprehenderit quod nulla voluptas et numquam nesciunt eligendi reiciendis,
+            deserunt temporibus assumenda doloribus eveniet voluptatem tempore eaque.</span></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    <div style="background-color: aqua;">Accusantium corporis id magni cupiditate reprehenderit quod nulla voluptas et
+        numquam nesciunt eligendi reiciendis, deserunt temporibus assumenda doloribus eveniet voluptatem tempore eaque.
+    </div>
+    </p>
+
+    <!--Unordered list-->
+    <h4>Groceries</h4>
+    <ul>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Bread</li>
+        <li>Coffee supplies</li>
+        <ul>
+            <li>Coffee beans</li>
+            <li>Creamer</li>
+            <li>Sugar</li>
+        </ul>
+    </ul>
+
+
+    <!--Ordered list-->
+    <h4>To Do list</h4>
+    <ol>
+        <li>Eat breaksfast</li>
+        <li>Go to class</li>
+        <li>Walk Dog</li>
+        <li>Study</li>
+        <li>Rest</li>
+    </ol>
+
+
+    <!--Description list-->
+    <h4>Mythical Creatures</h4>
+    <dl style="background-color: lightgreen; border:2px  solid;">
+        <dt>Dragon</dt>
+        <dd>A mythical animal usually represented as a monstrous winged and scaly serpent or saurian with a crested head
+            and enormous claws.</dd>
+        <dt>Phoenix</dt>
+        <dd>The phoenix is a legendary immortal bird that cyclically regenerates or is otherwise born again.</dd>
+        <dt>Vampires</dt>
+        <dd>A vampire is a mythical creature that subsists by feeding on the vital essence (generally in the form of
+            blood) of the living.</dd>
+        <dt>Werewolf</dt>
+        <dd>A person changed or able to change into a wolf.</dd>
+    </dl>
+
+    <!--Table-->
+
+    <h3>Store Hours</h3>
+
+    <table border="2" style="background-color: black;">
+        <tr align="center" style="background-color: lightblue;">
+            <th width="100">Monday</th>
+            <th width="100">Sunday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+        </tr>
+        <tr align="center" style="background-color: aliceblue;">
+            <td>Closed</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>10-2</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!--Button-->
+    <a href="page2.html">
+        <button style="font-size: 25px; background-color: grey; color: lightblue; border-radius: 25px;">Click
+            me</button>
+    </a>
+
+    <br>
+
+        <button onclick="doSomething()" style="font-size: 25px; background-color: grey; color: lightblue; border-radius: 25px;">change</button>
+
+    <p id="greeting">Hello</p>
+
+    <script>
+        function doSomething(){
+            document.getElementById("greeting").innerHTML = "Goodbye"
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="index.php" method="post" enctype="multipart/form-data ">
+        <label for="username">Username : </label>
+        <input type="text" id="username" placeholder="Spongebob" minlength="3" maxlength="15" required>
+
+        <br>
+
+        <label for="password">Password : </label>
+        <input type="password" id="password">
+
+        <br>
+        <label for="email">Email : </label>
+        <input type="email" id="email" placeholder="fake@gmail.com">
+
+        <br>
+        <label for="phone">Phone No : </label>
+        <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}[0-9]{4}">
+
+        <br>
+        <label for="bday">DOB : </label>
+        <input type="date" id="bday">
+
+        <br>
+        <label for="quantity">Quantity : </label>
+        <input type="number" id="quantity" min="0" max="99" value="1">
+
+        <br>
+        <label for="title">Title : </label>
+
+        <label for="mr.">Mr.</label>
+        <input type="radio" id="mr." name="title">
+        <label for="mrs.">Mrs.</label>
+        <input type="radio" id="mrs." name="title">
+        <label for="PHd.">PHd.</label>
+        <input type="radio" id="PHd." name="title">
+
+        <br>
+        <label for="payment">Payment : </label>
+        <select id="payment">
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Giftcard">Giftcard</option>
+        </select>
+
+        <br>
+        <label for="subscribe">Subscribe : </label>
+        <input type="checkbox" id="subscribe">
+
+        <br>
+        <label for="comment">Comment : </label>
+        <textarea type="text" id="comment" rows="3" cols="25"></textarea>
+
+        <br>
+        <label for="file">File : </label>
+        <input type="file" id="file" accept="image/png, image/jpeg">
+        
+        <br>
+        <input type="Reset">
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
