@@ -76,3 +76,23 @@ Hoisting - ek variable ko jab js mai banate hai to wo variable do hisse mai toot
 // Dynamic Typing -> js main static typing nahi hai and yaha par hai dynamic typing jiska mtlb hai aap data ko change kar sakte ho kyunki yha dynamic datatypes hai
 
 // typeof quirks(e.g., typeof null === 'object')
+
+// type coercion (== vs ===) -> concept jismain ek type automatically convert ho jaayega
+
+// Truthy and Falsy value
+// Falsy Values -> 0, false, "", null, undefined, NaN, document.all
+// All remianing values are truthy values
+
+/*
+Operators -> Arithmetic, comparison, logical, assignment, unary, ternary
+1. Arithmetic Operators:
++(Addition & Concatenation) -(Subtract) *(Multiplication) /(Division) %(Modulus) **(Exponential)
+
+2.Comparison
+= == ===
+< > <= >= ! != !== !!
+
+
+&& ||
+?:
+*/
