@@ -89,10 +89,85 @@ Operators -> Arithmetic, comparison, logical, assignment, unary, ternary
 +(Addition & Concatenation) -(Subtract) *(Multiplication) /(Division) %(Modulus) **(Exponential)
 
 2.Comparison
-= == ===
-< > <= >= ! != !== !!
+= -> for assign the values
+== -> It checks only the value not type (not strict comparison)
+=== -> It checks both value and type (Strict)
+<
+>
+<=
+>= 
+!= (not strict)
+!== (strict)
+!!
 
+3.Assignment Operator
+=
++=
+-=
+*=
+/=
+%=
 
-&& ||
+4.Logical Operator
+&& (AND)
+|| (OR)
+! (NOT)
+
+5.Unary operator
++
+-
+!
+++
+--
+typeof
+
+6.Ternary Operator
 ?:
+ex: 12>13 ? console.log("True") : console.log("False");
+
+
+#typeof & instanceof
+some quirks of typeof -> typeof null is an object
+                         typeof array is an object
+                         typeof NaN is a number
+
+
+instanceof -> generally work for reference type                         
 */
+
+/* Control Flow
+1. if else else-if
+
+if(condition){
+
+}
+else if(condition){
+
+}
+else{
+
+}
+
+2. switch case
+switch(value){
+case 1:
+    break;
+case 2:
+    break;
+case 3:
+    break;
+default:        
+}
+3. early return pattern
+function getVal(val){
+if (val<25) return "D";
+else if (val<50) return "C";
+else if (val<75) return "B";
+else return "A"
+}
+
+getVal(89);
+
+*/
+
+
