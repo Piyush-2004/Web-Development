@@ -1,20 +1,20 @@
 // 1. Variables
 
 // Var Let Const
-var a;
-var a = 12;
-let a;
-let a = 12;
-const a = 12;
+// var a;
+// var a = 12;
+// let a;
+// let a = 12;
+// const a = 12;
 
 // Declaration and Initialization
 
-var a; // Declare karna
-var a = 12; // declare and initialize
+// var a; // Declare karna
+// var a = 12; // declare and initialize
 
 
 // Var
-var a = 12;
+// var a = 12;
 /*
 1. window mein add hota hai
 2. function scoped hota hai
@@ -22,7 +22,7 @@ var a = 12;
 */
 
 // Let
-let boy = Piyush;
+// let boy = Piyush;
 /*
 1. aap firse declare nhi kar sakte ho error aayega
 2. Block scoped hota ha
@@ -45,8 +45,8 @@ let boy = Piyush;
 
 // Temporal Dead Zone - utna area jitne mein Js ko ptato hai ki variable exist karta hai par wo aapko value nhi de sakta
 
-console.log(a);
-let a = 12;
+// console.log(a);
+// let a = 12;
 
 // Hoisting impact per type
 /*
@@ -168,6 +168,60 @@ else return "A"
 
 getVal(89);
 
+#Loops
+
+for while do-while forin forof  foreach
+
+#for loop
+for loop -> kaha se jaana ha, kaha tak jaana ha, kaise jaana ha
+for(start; end; change){}
+
+for(i=1;i<101;i++){
+console.log(i);
+}
+
+#While Loop
+while loop -> kaha se jaana ha, kab rukna ha, kaise jaana ha
+start
+while(end){
+// code
+change
+}
+
+let i=1;
+while(i<32){
+console.log(i);
+i++;
+}
+
+#do-while loop
+let i=12;
+do{
+console.log(i);
+i++;
+}
+while(i<2);
+
+Examples : 
+1-50 -> for
+20-30 -> for
+hello na aa jaaye -> while
+laal color ka ped -> while
 */
 
+/*
+Practice Problem
 
+1. Print numbers from 1 to 10 using a for loop.
+for(i=0;i<11;i++){
+    console.log(i);
+}
+
+2. Print numbers from 10 to 1 using a while loop.
+*/
+
+let i=10;
+while(i=1){
+    console.log(i);
+    i++;
+}
