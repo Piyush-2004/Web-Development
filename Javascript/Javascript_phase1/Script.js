@@ -31,9 +31,9 @@
 
 // Scope(global, block, functional)
 /*
-1. Global - pure code mai use hoga 
+1. Global - pure code mai use hoga
 
-2. Block - { } -> this curly braces is a block, use only in this block 
+2. Block - { } -> this curly braces is a block, use only in this block
 
 3. Functional - func abc(), used only in a function
 */
@@ -218,10 +218,172 @@ for(i=0;i<11;i++){
 }
 
 2. Print numbers from 10 to 1 using a while loop.
-*/
-
 let i=10;
 while(i=1){
     console.log(i);
+    i--;
+}
+
+3. Print even numbers from 1 to 20 using a for loop
+for(i=1;i<21;i++){
+    if(i%2 === 0){
+        console.log(i);
+    } 
+}
+
+4. Print odd numbers from 1 to 15 using a while loop
+let i=1;
+while(i<16){
+    if(i%2 === 1){
+        console.log(i);
+    }
     i++;
 }
+
+5. Print the multiplication table of 5.
+for(i=1;i<11;i++){
+    console.log(i*5);
+}
+
+6. Print the sum of numbers from 1 to 100 using a loop.
+let sum = 0;
+for(i=1;i<101;i++){
+    sum = sum +i;
+    console.log(sum);
+}
+
+7. Print all numbers between 1 to 50 taht are divisible by 3.
+for(i=1;i<51;i++){
+    if(i%3 === 0){
+        console.log(i);
+    }
+}
+
+8. Ask the user for a number and print whether each number from 1 to that number is even or odd.
+let val = prompt("Give me a number");
+for(i=1;i<val;i++){
+    if(i%2===0){
+        console.log(`${i} is even`);
+    }
+    else{
+        console.log(`${i} is odd`);
+}   
+}
+
+9. Count how many numbers between 1 to 100 are divisible by both 3 and 5.
+for(i=1;i<101;i++){
+    if(i%3===0 && i%5===0){
+        console.log(i);
+    }
+}
+
+10. stop at first multiple of 7
+Write a loop from 1 to 100 that:
+Prints each number
+Stops completely when its find the first number divisible by 7
+for(i=1;i<101;i++){
+    if(i%7===0){
+        break;
+    }
+    console.log(i);
+}
+
+11. Skip Multiples of 3
+
+Write a loop from 1 to 20 that:
+Skip number divisible by 3
+print all others
+for(i=1;i<21;i++){
+    if(i%3===0) continue;
+    console.log(i);
+}
+
+10. Print first 5 Odd numbers only
+let count = 0;
+for(i=1;i<101;i++){
+    if(i%2===1){
+        count++;
+        console.log(i);
+    }
+    if(count===5) break;
+}
+*/
+
+/*
+#Functions
+
+1. Function ka name hum number,special characters aur keyword se nhi de sakte
+2. Syntax:
+pehla tareeka
+is tareeke ko hum function statements kehte hain
+function name(){
+// code
+}
+
+Dusra tareeka
+is tareeke ko hum function expression kehte hain
+let fnc = function(){
+console.log("Happy New Year");
+};
+
+fnc();
+
+Fat Arrow Func
+
+let fnc = ()=>{
+    console.log("HeyHeyHey");
+};
+fnc();
+
+
+Parameters and arguments
+example : function add(v1,v2){
+console.log(v1+v2);
+};
+add(1,2)
+
+here v1 and v2 are parameters and 1 and 2 are arguments
+
+Default, rest and spread parameters
+
+//ab arguments kai saare ho to humein utne hi parameters banane padenge, issey bachne ke liye hum rest ka use karte ha ... agr ... function ke parameter space mein lage ho to wo rest operators ha and agr wo array and obejcts mai ho to wo spread operator hai
+
+1. Default
+function add(v1=0,v2=0){
+console.log(v1+v2);
+}
+add(1,2)
+
+2.Rest
+function print(...val){
+console.log(val);
+}
+print(1,2,3,4,5,6,7,8,9,10)
+
+
+Returns and Early Returns
+
+First class functions -> functions ko value ki tarah treat kar sakte ho
+
+function abcd(val){
+val();
+}
+
+abcd(function(){
+console.log("hey");
+});
+
+Higher-order functions -> wo function hota ha wo return kare ek function ya fir accept kare ek function apne parameter mai
+
+Pure Function -> aisa function jo bahar ki value ko badal de
+let a = 3;
+function abcd(){
+console.log("Hii");
+}
+
+Impure function -> aisa function jo bahr ki value ko badal de
+let a = 3;
+function xyz(){
+a++;
+}
+*/
