@@ -386,4 +386,30 @@ let a = 3;
 function xyz(){
 a++;
 }
+
+closures -> ek function jo return kare ek aur function aur return hone waala function humesha use karega parent function ka koi variable
+function abcd(){
+let a = 12;
+return function(){
+console.log(a);
+}
+}
+
+Lexical Scoping -> jaise neeche example mai a ki lexical scoping hai 401 se 408 tak iskamtlb a ko hum jha define kar rhe ha wahse usko kis line tak use kar sakte ha wo uski lexical scoping hui
+
+function abcd(){
+let a = 12;
+function efgh(){
+let b = 13;
+function ijkl(){
+let c = 14;
+}
+}
+}
+
+Imediately Invoked Function Expression(IIFE)
+
+(function(){
+coonsole.log("HeyHey");
+})();
 */
